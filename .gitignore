@@ -1,0 +1,13 @@
+.venv
+__pycache__
+db.sqlite3
+package-lockl.json
+package.json
+
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
