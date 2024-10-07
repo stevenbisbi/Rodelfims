@@ -3,5 +3,6 @@ from Alquiler import views  # Asegúrate de importar tus vistas correctamente
 
 urlpatterns = [
     path('home/', views.home, name='home'),
-    # Agrega aquí más patrones de URL si es necesario
+    path('alquiler/', views.alquiler, name='alquiler'),
+    path('singin/', views.singin, name='singin'),
 ]

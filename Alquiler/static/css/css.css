@@ -1,0 +1,292 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+html, body {
+    height: 100%; /* Para que el body ocupe el 100% de la altura */
+    margin: 0; /* Elimina márgenes por defecto */
+}
+
+/** Globales **/
+.contenedor {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+button{
+    border-radius: 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+footer {
+    color: white;
+    background-color: black;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    margin: 0; /* Evita márgenes que podrían reducir el ancho */
+    bottom: 0; /* Ubica el footer en la parte inferior */
+}
+.footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 10px 35px;
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.footer h1{
+    font-size: 1.8rem;
+}
+.footer-der{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer-iz{
+  padding-top: 2rem;
+}
+.section-1{
+    color: white;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(40,57,147,0.9794292717086834) 54%, rgba(0,212,255,1) 87%);
+    max-height: 70rem;
+    min-height: 50rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button{
+    width: 15rem;
+    height: 5rem;
+    border: 1px solid black; /* Borde negro delgado */
+    border-radius: 0 20px 20px 0; /* Redondea solo los lados */
+    cursor: pointer;
+    background-color: transparent; /* Fondo transparente */
+}
+.section-1 h1{
+    display: inline-block;
+    padding: 15rem  10rem 0rem 20rem ;
+    font-weight: 700;
+    font-size: 6rem;
+    margin: 0;
+}
+
+.section-1 p{
+    display: inline-block;
+    padding: 2rem 20rem 2rem 20rem;
+    font-weight: 100;
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.boton-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Espacio entre los botones */
+    margin-top: 2px; /* Espacio sobre los botones */
+    margin-bottom: 20px; /* Espacio sobre los botones */
+    padding-bottom: 8rem;
+}
+
+.boton-main {
+    color: white;
+    width: 15rem; /* Ancho del botón */
+    height: 5rem; /* Alto del botón */
+    border: 1px solid white; /* Borde negro delgado */
+    border-radius: 20px; /* Redondear ambos lados */
+    cursor: pointer;
+    background-color: transparent; /* Fondo transparente */
+    padding: 10px 20px; /* Espaciado interno */
+    display: inline-block; /* Asegura que se comporte como un bloque en línea */
+}
+.button{
+        width: 15rem; /* Ancho del botón */
+        height: 5rem; /* Alto del botón */
+        border: 1px solid black; /* Borde negro delgado */
+        border-radius: 20px; /* Redondear ambos lados */
+        cursor: pointer;
+        background-color: transparent; /* Fondo transparente */
+        padding: 10px 20px; /* Espaciado interno */
+        display: inline-block; /* Asegura que se comporte como un bloque en línea */
+}
+
+.boton-secundary{
+    color: whitesmoke;
+    background-color: transparent;
+    border: none;
+}
+/* Estilos generales */
+.navegacion {
+    margin: 0;
+    position: sticky; /* Mantiene la barra en su posición hasta que se desplace hacia arriba */
+    display: flex;
+    justify-content: space-between; /* Para alinear h1 a la izquierda y ul a la derecha */
+    align-items: center; /* Alinear verticalmente en el centro */
+    padding: 10px 35px;
+    background-color: var(--blanco);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); /* Añade una sombra suave */
+    top: 0; /* Mantiene la barra en la parte superior */
+}
+
+.navegacion h1 {
+    margin: 0;
+}
+
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para alinear los elementos li horizontalmente */
+}
+
+.navegacion ul li {
+    margin-left: 5rem; /* Espacio entre los elementos li */
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+}
+
+.navegacion ul li a:hover {
+    text-decoration: underline; /* Efecto hover */
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 4rem;
+}
+
+.texto{
+    text-align: center;
+}
+
+.section-3-izquierda{
+    background-color: rgb(255, 227, 155);
+    padding: 2rem 2rem 5rem 2rem;
+}
+.section-3-derecha{
+    background-color: rgb(255, 227, 155);
+    padding: 2rem 2rem 5rem 2rem;
+}
+.section-2{
+    margin-top: 10rem;
+}
+.imagen{
+    background-image: url(../img/estrenos.jpeg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.m-t{
+    margin-top: 10rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%; /* Define las dos columnas */
+    grid-template-rows: auto; /* Ajusta el alto de las filas automáticamente */
+    gap: 1px /* Espacio entre los elementos */
+}
+
+.item1 {
+    grid-column: 1 / 2; /* Primera imagen en la primera columna */
+}
+
+.item2 {
+    grid-column: 2 / 2; /* Segunda imagen en la segunda columna */
+}
+
+.item3 {
+    grid-column: 1 / 2; /* Tercera imagen en la primera columna */
+}
+
+.item4 {
+    grid-column: 2 / 3; /* Cuarta imagen en la segunda columna */
+}
+
+.item5 {
+    grid-column: 1 / 2; /* Quinta imagen en la primera columna */
+}
+
+.item6 {
+    grid-column: 2 / 3; /* Sexta imagen en la segunda columna */
+}
+
+.grid-container img {
+    max-width: 50rem;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item1, .item3 {
+    grid-row: span 2; /* Ocupan 1 fila */
+}
+
+.item2, .item4 {
+    grid-row: span 1;
+}
+
+.item5, .item6 {
+    grid-row: span 1; /* Ocupan una fila */
+}
+
+/* Para lograr diferentes proporciones */
+.grid-container {
+    grid-template-columns: 50% 50%;
+}
+
+.grid-container div:nth-child(3),
+.grid-container div:nth-child(4) {
+    grid-template-columns: 50% 50%;
+}
+
+.grid-container div:nth-child(5),
+.grid-container div:nth-child(6) {
+    grid-template-columns: 50% 50%;
+}
