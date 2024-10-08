@@ -220,7 +220,7 @@ footer {
     color: white;
     background: rgb(2,0,36);
     background: linear-gradient(190deg, rgba(2,0,36,1) 0%, rgba(111,40,147,0.9794292717086834) 66%, rgba(109,0,255,0.5228466386554622) 91%);
-    padding: 2rem 2rem 5rem 2rem;
+    padding: 2rem 0rem 5rem 0rem;
 }
 .section-3-derecha{
     color: white;
@@ -228,7 +228,7 @@ footer {
     background: rgb(2,0,36);
     background: linear-gradient(190deg, rgba(2,0,36,1) 0%, rgba(111,40,147,0.9794292717086834) 66%, rgba(109,0,255,0.5228466386554622) 91%);
     max-height: 70rem;
-    padding: 2rem 2rem 5rem 2rem;
+    padding: 2rem 0rem 5rem 0rem;
 }
 .section-2{
     margin-top: 10rem;
