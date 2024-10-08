@@ -32,3 +32,8 @@ def signup(request):
             except IntegrityError:
                 return render(request, 'signup.html', {'form': UserCreationForm, 'error': 'username already exists'})
         return render(request, 'signup.html', {'form': UserCreationForm, 'error': 'Nombre de usuario o contraseña incorrectos'})
+
+@login_required 
+def signout(request):
+    logout(request)
+    return redirect('home')
