@@ -167,15 +167,18 @@ footer {
 }
 /* Estilos generales */
 .navegacion {
-    margin: 0;
-    position: sticky; /* Mantiene la barra en su posición hasta que se desplace hacia arriba */
+    position: fixed; /* Mantiene la barra fija */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* Asegura que el nav ocupe todo el ancho */
+    z-index: 1000; /* Para que el nav se mantenga sobre otros elementos */
     display: flex;
-    justify-content: space-between; /* Para alinear h1 a la izquierda y ul a la derecha */
-    align-items: center; /* Alinear verticalmente en el centro */
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 35px;
     background-color: var(--blanco);
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); /* Añade una sombra suave */
-    top: 0; /* Mantiene la barra en la parte superior */
 }
 
 .navegacion h1 {
